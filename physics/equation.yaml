@@ -1,0 +1,7 @@
+- is: physical equation
+- has:
+    lhs:
+      type: list
+- has:
+    rhs:
+      type: list
