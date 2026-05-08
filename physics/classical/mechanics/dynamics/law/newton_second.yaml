@@ -22,13 +22,14 @@
       type: computer/sw/url
       value: "https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion"
 - has:
-    expression_str:
-      type: str
-      value: "F = m * a"
-- has:
-    expression_yaml:
-      type: str
-      value: |
-        math/algebra/operation/multiply:
-          - mass
-          - acceleration
+    expression:
+      type: math/expression
+      as:
+        - math/expression:
+            expression_str:
+              value: "F = m * a"
+            expression_yaml:
+              value: |
+                math/algebra/operation/multiply:
+                  - mass
+                  - acceleration
